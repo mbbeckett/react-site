@@ -1,8 +1,16 @@
-import React from 'react';
+import React from 'react'
+import '../App.css'
 
-const ContactPage = () => (
-    <div>
+function ContactPage() {
+    
+    return (
+        <>
         <h1>Contact</h1>
-    </div>
-);
-export default ContactPage;
+        {/* <Router>
+            <Link to="https://linkedin.com/in/madelinebeckett">Linkedin</Link>
+        </Router> */}
+        </>
+    )
+}
+
+export default ContactPage

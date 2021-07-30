@@ -1,18 +1,24 @@
-// import React from 'react';
-// import background from '../pages/hero-image.jpg';
-// function HeroPage() {
-
-//     return (
-//         <div className="hero-container">
-//             <img src={background} alt="hero background" />
-//         {/* image */}
-//         <h1>Heading</h1>
-//         <p>Subheading</p>
-//         <div className="hero-btns">
+import React from 'react'
+import hero from '../pink.jpg';
+import './HeroSection.css'
+import { motion } from "framer-motion"
+import {Link} from 'react-router-dom';
+function HeroSection() {
+    return (
         
-//         </div>
-//         </div>
-//     )
-// }
+        <div
+        className="hero-container">
+            <img src={hero} alt="hero" />
+            <motion.div className="hero-text"
+                animate={{opacity: 1}}
+                initial={{opacity: 0}}
+                transition={{duration:2}}>
+                <h1>Madeline Beckett</h1>
+                <p>Junior Web Developer</p>
+            </motion.div>
+            <Link to="/about"><button className='btn'>About Me</button></Link>
+        </div>
+    )
+}
 
-// export default HeroPage;
+export default HeroSection

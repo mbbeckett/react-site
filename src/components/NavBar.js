@@ -7,12 +7,11 @@ function Navbar() {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-
     return (
         <>
         <nav className="navbar">
-            <div className="navbar=container">
-                <Link to="/" className="navbar-logo"><img src={}</Link>
+            <div className="navbar-container">
+                {/* <Link to="/" className="navbar-logo">MB</Link> */}
                 {/* handleClick switches click to true or false */}
                 <div className="menu-icon"  onClick={handleClick}>
                     {/* conditional rendering different nav icons */}
