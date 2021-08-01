@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
+import NotFoundError from './pages/NotFoundError';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path="/about" component={AboutPage}></Route>
         <Route path="/projects" component={ProjectsPage}></Route>
         <Route path="/contact" component={ContactPage}></Route>
+        <Route path="*" component={NotFoundError}/>
+
       </Switch>
     </Router>
     </>

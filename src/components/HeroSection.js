@@ -16,7 +16,9 @@ function HeroSection() {
                 <h1>Madeline Beckett</h1>
                 <p>Junior Web Developer</p>
             </motion.div>
-            <Link to="/about"><button className='btn'>About Me</button></Link>
+            <Link to="/about" className="btn">
+                <i class="fas fa-arrow-right"></i>
+            </Link>
         </div>
     )
 }

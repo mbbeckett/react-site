@@ -1,12 +1,12 @@
 .about-container{
-    background: url('../aboutbg.jpg') center center/cover no-repeat;
+    /* background: url('../aboutbg.jpg') center center/cover no-repeat; */
     height:100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    object-fit: contain;
+    /* object-fit: contain; */
 }
 
 img {
@@ -20,13 +20,14 @@ img {
 .about-block{
     display: block;
     background-color: #fff;
+    padding: 15px;
 }
 
 .about-text h1{
     color:rgb(90, 17, 17);
     font-size: 40px;
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 100px;
     /* margin-top: -100px; */
     align-items: flex-start;
     font-family: 'Archivo Black';
@@ -35,7 +36,7 @@ img {
 .about-text h3{
     color:rgb(90, 17, 17);
     font-size: 24px;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-top: 15px;
 }
 

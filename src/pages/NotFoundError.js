@@ -1,7 +1,14 @@
 import React from 'react';
+import '../App.css';
+import { useLocation } from 'react-router-dom';
 
-const NotFoundError = () => (
-    <h1>404: Page Not Found</h1>
-);
-
-export default NotFoundError;
+function NotFoundError() {
+    let location = useLocation();
+    console.log(location)
+    return (
+        <div>
+            <h1>Resource not found at {location.pathname}</h1>
+        </div>
+    )
+}
+export default NotFoundError

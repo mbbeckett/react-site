@@ -41,6 +41,9 @@ img {
     border: none;
     cursor: pointer;
     margin-top: 30px;
+    font-size: 2rem;
+    color: #3d0000;
+
 }
 
 .btn:hover{
