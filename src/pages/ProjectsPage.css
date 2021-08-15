@@ -1,12 +1,21 @@
-ul{
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.projects-list ul{
     list-style-type: none;
+    margin-top: 20px;
 }
 
 li {
-    text-align: left;
-    margin-top:10px;
+    text-align: center;
+    /* text-align: left; */
+    margin-top:15px;
+    margin-bottom: 15px;
     color:rgb(90, 17, 17);
-    font-size:16px;
+    font-size:20px;
     line-height: 30px;
     font-family: 'Montserrat';
 }
@@ -35,15 +44,14 @@ img {
     color:rgb(90, 17, 17);
     font-size: 48px;
     margin-top: -100px;
-    text-align: left;
-    margin-left: 80px;
+    text-align: center;
+
     font-family: 'Archivo Black';
 }
 
 .projects-text > h3{
-    text-align: left;
-    margin-left: 80px;
-    margin-top:8px;
+    text-align: center;
+    margin-top:32px;
     color:rgb(90, 17, 17);
     font-size:32px;
     font-family: 'Montserrat';
@@ -56,6 +64,7 @@ img {
     font-size:32px;
     font-family: 'Montserrat';
 }
+
 .btn{
     padding: 10px;
     border-radius: 4px;
@@ -74,11 +83,13 @@ img {
     transition: all 0.3s ease-out;
 }
 
-/* 
-.hero-btns{
-    margin-top: 32px;
-}
-
-.hero-btns btn{
-    margin-left: 6px;
-} */
+a {
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+    color:rgb(90, 17, 17);
+    font-size:18px;
+    line-height: 50px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+  }

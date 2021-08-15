@@ -3,6 +3,7 @@ import '../App.css'
 import './AboutPage.css'
 import background from '../pink.jpg'
 import {motion} from 'framer-motion';
+import {Link} from 'react-router-dom';
 
 function AboutPage() {
     return (
@@ -19,7 +20,7 @@ function AboutPage() {
                 <h1>About</h1>
                 <h3>My Story</h3>
                 <p>
-                    I am a new Launchcode graduate, ready to begin a new career in tech. 
+                    I am a new Launchcode graduate, ready to begin my career in tech. 
                     At LaunchCode, I learned foundational coding concepts to complete 
                     in-class projects by myself and on a team. My non-traditional background, 
                     sense of creativity, and management experience allow me to apply a unique 
@@ -27,11 +28,13 @@ function AboutPage() {
                     skills and technologies as well as growing my current skillset. I look forward 
                     to beginning the next chapter of my life as a full-stack web developer. 
                 </p>
-
             </motion.div>
             </div>
+            <Link to="/projects" className="btn">
+                <i class="fas fa-arrow-right"></i>
+            </Link>
         </div>
-        {/* <EducationPage /> */}
+
     </>
 
     )
